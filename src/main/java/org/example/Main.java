@@ -10,6 +10,7 @@ public class Main {
         // NullPointerException
 
 //        Person person = new Person();
+                        //8
 //        person.setName("cdres");
 //        System.out.println(person.getName().charAt(0));
 
@@ -35,6 +36,7 @@ public class Main {
             Integer.parseInt("0", 10);
 
             // 2
+
             System.out.println("2| After parseInt method");
             Person person = new Person();
             person.print(3);
