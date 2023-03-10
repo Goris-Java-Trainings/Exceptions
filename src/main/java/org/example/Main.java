@@ -1,7 +1,10 @@
 package org.example;
 
+import org.example.exception.PersonException;
+
 import java.io.FileNotFoundException;
 import java.nio.charset.UnsupportedCharsetException;
+import java.util.UUID;
 
 public class Main {
 
@@ -29,6 +32,22 @@ public class Main {
         // NumberFormatException
 
         // Exception handling
+
+        try {
+            Person person = new Person(UUID.randomUUID());
+            person.setName("Vvfreve%");
+            person.setAge(1);
+            person.setEmail("fgtregtre@vrfdsvs.com");
+
+            System.out.println(person);
+        } catch (PersonException pe) {
+            System.out.println(pe.getMessage());
+        }
+
+        System.out.println("After exception");
+    }
+
+    private static void exceptionHandling() throws IllegalAccessException {
         try {
             // 1
             System.out.println("1| Start");
